@@ -1,0 +1,63 @@
+// mixin
+@import "../abstracts/mixin";
+// variables
+@import "../abstracts/variables";
+
+/* estilos de header */
+header{
+    img{
+        width: 30%;
+    }
+    @include flex;
+    nav{
+        ul{
+            li{
+                a{
+                    color: $color-tipografia;
+                    text-decoration: none;
+                    font-weight: bold ;
+                    list-style: none;
+                    gap: 5px;
+                    padding-right: 10%;
+
+                }
+            }
+        }
+    
+    }
+}
+
+/* estilos de main */
+main{
+    p{
+        text-align: center;
+        font-style: oblique;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    height: 80vh;
+    @include grid (grid, 2fr, repeat(3));
+    text-align: center;
+    h1{
+        text-transform: uppercase;
+        text-decoration: underline
+    }
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+/* estilos de footer */
+footer{
+    text-align: center;
+}
+
+/* estilos para tablet */
+
+@media screen and (min-width: 600px){
+
+}
